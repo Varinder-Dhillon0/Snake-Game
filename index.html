@@ -37,80 +37,80 @@
   </head>
   <body>
     <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <nav class="navbar px-4 mx-auto w-75 mt-3 navbar-expand-lg navbar-light bg-light rounded-pill">
         <div class="container-fluid">
-          <a href="#" class="navbar-brand"><img src="Graphics/logo.png" width="250px" alt=""> SLITHER SAGA</a>
+          <a href="#" class="navbar-brand pt-2"><img src="Graphics/logo.png" width="56px" alt="">SLITHER SAGA</a>
             <div class="navbar-nav">
-              <button class="nav-item nav-link"><img src="Graphics/conrols.png" width="40px" alt=""></button>
+              <button class="nav-item nav-link" style="z-index: 9991;"><img src="Graphics/conrols.png" width="40px" alt=""></button>
             </div>
           </div>
         </div>
       </nav>
     </div>
 
-    <div class="controls-wrap">
-      <div class="controls">
-        <div class="control">
+    <div class="controls-wrap absolute d-grid place-items-center position-fixed h-100 w-100">
+      <div class="controls bg-light rounded-5">
+        <div class="control d-flex align-items-center mb-4">
           <img src="controls/up.svg" alt="">
-          <h6>Move the snake upwards</h6>
+          <h6 class="ms-3">Move the snake upwards</h6>
         </div>
-        <div class="control">
+        <div class="control d-flex align-items-center mb-4">
           <img src="controls/down.svg" alt="">
-          <h6>Move the snake downwards</h6>
+          <h6 class="ms-3">Move the snake downwards</h6>
         </div>
-        <div class="control">
+        <div class="control d-flex align-items-center mb-4">
           <img src="controls/right.svg" alt="">
-          <h6>Move the snake to the right</h6>
+          <h6 class="ms-3">Move the snake to the right</h6>
         </div>
-        <div class="control">
+        <div class="control d-flex align-items-center mb-4">
           <img src="controls/left.svg" alt="">
-          <h6>Move the snake to the left</h6>
+          <h6 class="ms-3">Move the snake to the left</h6>
         </div>
-        <div class="control">
+        <div class="control d-flex align-items-center mb-4">
           <img src="controls/space.svg" alt="">
-          <h6>Start or reset the game</h6>
+          <h6 class="ms-3">Start or reset the game</h6>
         </div>
       </div>
     </div>
 
-    <div class="container container-fluid col-12">
+    <div class="container h-75 d-flex justify-content-between align-items-center relative container-fluid col-12">
       <div class="col-4.5">
-        <div class="scores">
-          <div class="current-score">
-            <div class="heart">
-              <div class="heartbeat">
-                <img src="Graphics/apple.png" alt="" />
+        <div class="scores h-40 p-3 rounded-3 mb-0 absolute justify-content-between align-items-center d-flex">
+          <div class="current-score fs-6 d-flex align-items-center">
+            <div class="heart relative">
+              <div class="heartbeat relative">
+                <img src="Graphics/apple.png" width="31px" alt="" />
               </div>
-              <div class="heartecho">
-                <img src="Graphics/apple.png" alt="" />
+              <div class="heartecho absolute">
+                <img src="Graphics/apple.png" width="31px" alt="" />
               </div>
             </div>
-            <div class="score"></div>
+            <div class="score fs-5 ml-2 fw-bold"></div>
           </div>
           <div class="h-score"></div>
         </div>
         <div class="grid"></div>
       </div>
-      <div class="col-4 settings">
+      <div class="col-4 settings relative mt-1 d-flex flex-column align-items-center bg-white p-3 p-md-4 rounded-3 text-center">
         <div class="speed">
           <h5>Snake Speed</h5>
           <input id="speed-slider" type="text" data-slider-min="0" data-slider-max="60" data-slider-step="1" data-slider-value="1" />
         </div>
-        <div class="sound">
+        <div class="sound mt-5">
           <h5>Sound</h5>
-          <div class="sound-change">
+          <div class="sound-change mt-4 d-flex">
             <div class="sound-1">
               <h6>SFX</h6>
               <button class="sfx"><i class="fa-solid fa-volume-high"></i></button>  
             </div>
             <div class="sound-1">
               <h6>MUSIC</h6>
-              <button class="music" style="width: 49px;"><i class="fa-solid fa-music"></i><div class=""></div></button>  
+              <button class="music relative" style="width: 49px;"><i class="fa-solid fa-music"></i><div class="absolute"></div></button>  
             </div>
           </div>
         </div>
-        <footer>
-          Press an <img src="controls/all.svg"/> or <img src="controls/space.svg" width="20px"/> to start!
+        <footer class="text-center w-75 fw-bold fs-6 position-absolute bg-transparent border-0 py-0 my-0 w-66">
+          Press an <img src="controls/all.svg" alt="All Controls" class="mx-2" /> or <img src="controls/space.svg" alt="Space Control" width="20px" class="mx-2" /> to start!
         </footer>
       </div>
       </div>

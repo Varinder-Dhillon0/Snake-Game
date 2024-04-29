@@ -1,8 +1,5 @@
 // Initialize layout
 resetGame();
-//   const myModal = new bootstrap.Modal(document.getElementById('myModal'), {keyboard : false});
-//   // Handle user inputs (e.g. start the game)
-//   myModal.show();
 
 window.addEventListener("keydown", (event) => keyEvents(event));
 
